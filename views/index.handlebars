@@ -1,13 +1,16 @@
-<img src="../public/assets/images/burger1.gif">
+<img src="assets/images/burger3.gif">
 
-{{!-- <ul>
+<ul>
   {{#each burgers}}
-  	<li>  		
-      <p>{{this.burger_name}}</p>
-      <button data-id="/{{this.id}}" class="devour">Devour</button>
-  	</li>
+  <li>
+	{{burger_name}}
+	<button class="change-devour" data-id="{{id}}">Devour</button>
+</li>
   {{/each}}
-</ul> --}}
+</ul>
+
+
+
 
 <h2>Eat-Da-Burger</h2>
 <form class="create-form">

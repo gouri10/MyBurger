@@ -107,12 +107,13 @@ var orm={
     all:function(tableName,selectColumns,cb)
     {
         var queryString="SELECT ?? from ??";
-        connection.query(queryString,selectColumns,tableName,fucntion(err,res)
+        connection.query(queryString,selectColumns,tableName,function(err,res)
         {
             if (err){ 
                 throw err;
             }
             cb(res);
+          
 
         });
     },
