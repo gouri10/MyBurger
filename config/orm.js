@@ -1,7 +1,7 @@
 // Import MySQL connection.
 var connection = require("../config/connection.js");
 
-// Helper function for SQL syntax.
+
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -101,22 +101,3 @@ var orm = {
 
 // Export the orm object for the model (cat.js).
 module.exports = orm;
-
-
-var orm={
-    all:function(tableName,selectColumns,cb)
-    {
-        var queryString="SELECT ?? from ??";
-        connection.query(queryString,selectColumns,tableName,function(err,res)
-        {
-            if (err){ 
-                throw err;
-            }
-            cb(res);
-          
-
-        });
-    },
-
-    
-}

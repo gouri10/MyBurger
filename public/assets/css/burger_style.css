@@ -1,4 +1,51 @@
 body{
-    background-color: rgb(236, 236, 104);
+    background-image: url("/assets/images/burger3.gif");
+    background-color: bisque;
+    background-position: left top;
     text-align: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
 }
+
+.container-fluid{
+    width:fit-content;
+}
+
+button{
+    padding:0.25em;
+    background-color: white;
+    color:black;
+    margin:0.3em;
+    font-size: 0.9em;
+}
+
+button:hover{
+background-color: turquoise;
+}
+
+#burgerInput{
+    width:100%;
+    padding:1em;
+    margin:0.5em 0.5em 0.2em 0.5em;
+}
+
+h2{
+    margin-top:1em;
+}
+
+ul{
+    list-style-type: none;
+   
+  }
+
+  li{
+    text-align: -webkit-left;
+    list-style-position: inside;
+    margin: 0.5em;
+  }
+
+  .styleList{
+    background-color: white;     
+    padding: 0.25em 5em 0.25em 0.5em;    
+    width: fit-content;
+  }
