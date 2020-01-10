@@ -2,58 +2,40 @@
 MyBurger
 
 # Project Description
-liri-node-app
-It is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
-LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
+Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat
 
 # Getting Started
-clone the GitHub repository https://github.com/gouri10/liri-node-app to your computer using the below command
-git clone git@github.com:gouri10/liri-node-app.git
+# DB Setup
+Create a MySQL Database called `burgers` and Insert mock data
+For the above things please run schema.sql and seeds.sql files in sql workbench
+
+Application URL:-  
 
 # Prerequisites
-##We use The Spotify API and it requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
-
-   * Step One: Visit <https://developer.spotify.com/my-applications/#!/>
-
-   * Step Two: Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
-
-   * Step Three: Once logged in, navigate to <https://developer.spotify.com/my-applications/#!/applications/create> to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
-
-   * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values 
-
-##Create a file named `.env`, add the following to it, replace the values with your API key & secret (copied above) (no quotes required,directly paste them) 
-
-```js
-# Spotify API keys
-
-SPOTIFY_ID=your-spotify-id
-SPOTIFY_SECRET=your-spotify-secret
-
-```
+Make sure any of the browser(IE, Chrome, Safari, Firefox) is installed
 
 # Installation
-##Navigate to the root of our application and Run the below command to install all npm packages
+#Navigate to the root of the application and Run the below command to install all npm packages
 
 npm install 
 
+##Navigate to the browser
+##Hit the application url
 
 # Running the tests
-node liri.js movie-this <movie name here>
-![Sample-Movie-this-Output](/images/movie-this-output.png)
+## Test1:-
+Hit the application URL
+Add the burger and the app should display the burger on the left side of the page -- waiting to be devoured.
 
-node liri.js spotify-this-song <song name here>
-![Sample-Spotify-this-song-Output](/images/spotify-this-song-output.png)
-
-node liri.js concert-this <artist/band name here>
-![Sample-Concert-this-Output](/images/concert-this-output.png)
-
-node liri.js do-what-it-says
-![Sample-do-what-it-says-Output](/images/do-what-it-says-output.png)
-
+## Test2:-
+Hit the application URL
+Click devour it of any burger
+Observe if the burger is moved to right side and no devour it button is displayed
 
 # Built With
 Node - The web framework
 JQuery -Web Scripting
+Express - Http Node app
 
 # Authors
 Gouri peddinti :- Developer
@@ -63,5 +45,4 @@ This project is licensed under the ISC License
 
 # Acknowledgments
 Hat tip to anyone whose code was used
-
 
